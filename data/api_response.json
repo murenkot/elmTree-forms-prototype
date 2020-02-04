@@ -1,5 +1,4 @@
-
-const api_response = [
+[
     {
         "FormID": 2,
         "FieldID": 1,
@@ -234,32 +233,5 @@ const api_response = [
         "Required": 1,
         "FieldValue": "Somewhere there"
     }
+
 ]
-
-
-
-api_response.forEach((row)=>{
-    if (row.FormID === 2) {
-
-    }
-});
-
-// form name
-const formName = api_response[0].ClientFormName;
-$('#ID2-form-name').append(`
-        <h3>${formName}</h3>
-        `);
-
-
-// form data level 2
-const form2data = api_response.filter(row => row.FormID === 2);
-form2data.forEach(row => {
-    $('#form-2-container').append(`
-        ${row.FieldName}<br/>
-        <input type="text" name=${row.FieldName} placeholder=${row.GhostText} />
-        <br/>
-    `);
-    console.log(row.GhostText); 
-}) 
-
-
