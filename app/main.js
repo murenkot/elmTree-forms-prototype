@@ -309,7 +309,7 @@ const api_response = [
        "tasks":[
           
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task One",
                 "ParentFormId":null,
                 "FieldOrder":1,
                 "Title":"Date Tested",
@@ -331,7 +331,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task One",
                 "ParentFormId":null,
                 "FieldOrder":2,
                 "Title":"Gauge Number",
@@ -353,7 +353,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task One",
                 "ParentFormId":null,
                 "FieldOrder":3,
                 "Title":"Density Standard",
@@ -375,10 +375,10 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task One",
                 "ParentFormId":null,
                 "FieldOrder":4,
-                "Title":"Density Shots",
+                "Title":"Density Shot",
                 "DataType":"FORM SELECT",
                 "Chars":25,
                 "Required":1,
@@ -397,7 +397,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot One",
                 "ParentFormId":2,
                 "FieldOrder":1,
                 "Title":"Proctor",
@@ -419,7 +419,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot One",
                 "ParentFormId":2,
                 "FieldOrder":2,
                 "Title":"Spec Number",
@@ -441,7 +441,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot One",
                 "ParentFormId":2,
                 "FieldOrder":3,
                 "Title":"Test Location",
@@ -463,7 +463,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot One",
                 "ParentFormId":2,
                 "FieldOrder":4,
                 "Title":"Baby T Button",
@@ -485,7 +485,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 1 parent 1 group 1",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -507,7 +507,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 1 parent 1 group 1",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -529,7 +529,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Two",
                 "ParentFormId":2,
                 "FieldOrder":1,
                 "Title":"Proctor",
@@ -551,7 +551,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Two",
                 "ParentFormId":2,
                 "FieldOrder":2,
                 "Title":"Spec Number",
@@ -573,7 +573,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Two",
                 "ParentFormId":2,
                 "FieldOrder":3,
                 "Title":"Test Location",
@@ -595,7 +595,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Two",
                 "ParentFormId":2,
                 "FieldOrder":4,
                 "Title":"Baby T Button",
@@ -617,7 +617,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 1 parent 2 group 1",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -639,7 +639,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 1 parent 2 group 1",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -661,7 +661,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 1 parent 2 group 2",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -683,7 +683,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 1 parent 2 group 2",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -707,7 +707,7 @@ const api_response = [
           
           
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task Two",
                 "ParentFormId":null,
                 "FieldOrder":1,
                 "Title":"Date Tested",
@@ -729,7 +729,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task Two",
                 "ParentFormId":null,
                 "FieldOrder":2,
                 "Title":"Gauge Number",
@@ -751,7 +751,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task Two",
                 "ParentFormId":null,
                 "FieldOrder":3,
                 "Title":"Density Standard",
@@ -773,10 +773,10 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density Task Two",
                 "ParentFormId":null,
                 "FieldOrder":4,
-                "Title":"Density Shots",
+                "Title":"Density Shot",
                 "DataType":"FORM SELECT",
                 "Chars":25,
                 "Required":1,
@@ -795,7 +795,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Three",
                 "ParentFormId":2,
                 "FieldOrder":1,
                 "Title":"Proctor",
@@ -817,7 +817,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Three",
                 "ParentFormId":2,
                 "FieldOrder":2,
                 "Title":"Spec Number",
@@ -839,7 +839,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Three",
                 "ParentFormId":2,
                 "FieldOrder":3,
                 "Title":"Test Location",
@@ -861,7 +861,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Three",
                 "ParentFormId":2,
                 "FieldOrder":4,
                 "Title":"Baby T Button",
@@ -883,7 +883,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 2 parent 1 group 1",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -905,7 +905,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 2 parent 1 group 1",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -927,7 +927,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Four",
                 "ParentFormId":2,
                 "FieldOrder":1,
                 "Title":"Proctor",
@@ -949,7 +949,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Four",
                 "ParentFormId":2,
                 "FieldOrder":2,
                 "Title":"Spec Number",
@@ -971,7 +971,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Four",
                 "ParentFormId":2,
                 "FieldOrder":3,
                 "Title":"Test Location",
@@ -993,7 +993,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Density Shot",
+                "FormName":"Density Shot Four",
                 "ParentFormId":2,
                 "FieldOrder":4,
                 "Title":"Baby T Button",
@@ -1015,7 +1015,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 2 parent 2 group 1",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -1037,7 +1037,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 2 parent 2 group 1",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -1059,7 +1059,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 2 parent 2 group 2",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -1081,7 +1081,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task 2 parent 2 group 2",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -1112,7 +1112,7 @@ const api_response = [
        "tasks":[
           
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density 2",
                 "ParentFormId":null,
                 "FieldOrder":1,
                 "Title":"Date Tested",
@@ -1134,7 +1134,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density 2",
                 "ParentFormId":null,
                 "FieldOrder":2,
                 "Title":"Gauge Number",
@@ -1156,7 +1156,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density 2",
                 "ParentFormId":null,
                 "FieldOrder":3,
                 "Title":"Density Standard",
@@ -1178,10 +1178,10 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Soil Density",
+                "FormName":"Soil Density 2",
                 "ParentFormId":null,
                 "FieldOrder":4,
-                "Title":"Density Shots",
+                "Title":"Density Shot",
                 "DataType":"FORM SELECT",
                 "Chars":25,
                 "Required":1,
@@ -1310,7 +1310,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T ",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -1420,7 +1420,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task two parent two group one",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -1442,7 +1442,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task two parent two group one",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -1464,7 +1464,7 @@ const api_response = [
                 "FormGroupId":1
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task two parent two group two",
                 "ParentFormId":3,
                 "FieldOrder":1,
                 "Title":"Check Me Out",
@@ -1486,7 +1486,7 @@ const api_response = [
                 "FormGroupId":2
              },
              {
-                "FormName":"Baby T",
+                "FormName":"Baby T task two parent two group two",
                 "ParentFormId":3,
                 "FieldOrder":2,
                 "Title":"Im three layers deep",
@@ -1515,6 +1515,98 @@ const api_response = [
  ]
 
 
+ const tamplates = {
+     "Density Shot": [
+        {
+            "FormName":"Density Shot One",
+            "ParentFormId": null,
+            "FieldOrder":1,
+            "Title":"Proctor",
+            "DataType":"ARRAY",
+            "Chars":null,
+            "Required":1,
+            "JobId": null,
+            "FormId": null,
+            "GhostText":"",
+            "CustomerId": null,
+            "ParentFieldId":null,
+            "ParentGroupId":null,
+            "Units":"",
+            "TaskId":null,
+            "FieldValue":"Proctor 1",
+            "PickList":"Proctor 1|Proctor 2|Proctor 3",
+            "FieldId":1,
+            "ShowInApp":1,
+            "FormGroupId":null
+         },
+        {
+            "FormName":"Density Shot",
+            "ParentFormId": null,
+            "FieldOrder":2,
+            "Title":"Spec Number",
+            "DataType":"ARRAY",
+            "Chars":null,
+            "Required":1,
+            "JobId": null,
+            "FormId": null,
+            "GhostText":"",
+            "CustomerId": null,
+            "ParentFieldId": null,
+            "ParentGroupId": null,
+            "Units":"",
+            "TaskId": null,
+            "FieldValue":"A",
+            "PickList":"A|B|C|D",
+            "FieldId":2,
+            "ShowInApp":1,
+            "FormGroupId": null
+         },
+         {
+            "FormName":"Density Shot One",
+            "ParentFormId": null,
+            "FieldOrder":3,
+            "Title":"Test Location",
+            "DataType":"STRING",
+            "Chars":15,
+            "Required":1,
+            "JobId":null,
+            "FormId":null,
+            "GhostText":"",
+            "CustomerId":null,
+            "ParentFieldId":null,
+            "ParentGroupId":null,
+            "Units":"",
+            "TaskId":null,
+            "FieldValue":"This was a great 1st shot",
+            "PickList":null,
+            "FieldId":3,
+            "ShowInApp":1,
+            "FormGroupId":null
+         },
+         {
+            "FormName":"Density Shot One",
+            "ParentFormId":null,
+            "FieldOrder":4,
+            "Title":"Baby T Button",
+            "DataType":"FORM SELECT",
+            "Chars":null,
+            "Required":1,
+            "JobId":null,
+            "FormId":null,
+            "GhostText":"",
+            "CustomerId":null,
+            "ParentFieldId":null,
+            "ParentGroupId":null,
+            "Units":"",
+            "TaskId":null,
+            "FieldValue":"",
+            "PickList":null,
+            "FieldId":4,
+            "ShowInApp":1,
+            "FormGroupId":null
+         },
+     ]
+ }
 
 
 // retrive data for a particular form to separate dataset
@@ -1556,8 +1648,6 @@ const api_response = [
 const testInput = () => {
     console.log("something is changing");
 }
-
-
 
 
 
@@ -1604,7 +1694,6 @@ const getFormDataSet = (FormId, FormGroupId, ParentFormId, ParentFieldId) => {
     return [...dataSet];
 }
 
-
 const getRowData = (dataSet, FieldId) => {
     let row = dataSet.filter(row => row.FieldId === FieldId);
     return row;
@@ -1634,31 +1723,99 @@ const setVisibleForm = (sectionId) => {
     visibleForm.sectionId = sectionId
 }
 
-const setParentForm = (currentSectionId) => {
-    currentFormId = Number(currentSectionId.split('-')[1]);
-    currentFormGroupId = Number(currentSectionId.split('-')[2]);
-    currentParentGroupId = Number(currentSectionId.split('-')[3]);
-    currentParentFieldId = Number(currentSectionId.split('-')[4]);
+const addNewSubform = (subformName, sectionId, fieldId) => {
+    const subformTemplate = tamplates[subformName];
+    // const newSubform = [...subformTemplate];
+    const newSubform = tamplates[subformName].slice();
+    // const newSubform = Array.from(Object.create(tamplates[subformName]));
+    // Object.assign(newSubform, tamplates[subformName])
+    console.log(tamplates[subformName]);
+    console.log(newSubform);
+    let ID = sectionId.split('-');
+    let JobId = job.jobId;
+    let TaskId = Number(ID[1]);
+    let FormId = Number(ID[2]) + 1;
+    let ParentFormId = Number(ID[2]);
+    let ParentGroupId = Number(ID[3]);
 
-    let first_row = taskDataSet.filter(row => row.FormId === currentFormId && row.FormGroupId === currentFormGroupId && row.ParentGroupId === currentParentGroupId && row.ParentFieldId === currentParentFieldId )[0];
-    FormId = first_row.ParentFormId;
-    FormGroupId = currentParentGroupId;
 
-    parentParentFieldId = first_row.ParentFieldId;
-    
-    parentForm.sectionId = 'form-' + parentFormId + '-' + parentFormGroupId;
+    // new FormGroupId depends on the previous biggest FormGroupId
+    let lastFormGroupId = 0;
+    let dataset = api_response[0].tasks.filter(row => row.TaskId === TaskId && row.FormId === FormId && row.ParentGroupId === ParentGroupId && row.ParentFieldId === ParentFieldId);
+
+    dataset.forEach(row => {
+        if (row.FormGroupId > lastFormGroupId) 
+        {lastFormGroupId = row.FormGroupId}
+    });
+    let nextFormGroupId = lastFormGroupId + 1;
+    let CustomerId = dataset[0].CustomerId;
+
+    newSubform.forEach(row => {
+        row.JobId = JobId;
+        row.TaskId = TaskId;
+        row.FormId = FormId;
+        row.ParentFormId = ParentFormId;
+        row.ParentGroupId = ParentGroupId;
+        row.FormGroupId = nextFormGroupId;
+        row.CustomerId = CustomerId;
+        row.ParentFieldId = fieldId;
+    });
+
+    console.log(newSubform);
+    console.log(tamplates);
+
+
+  
+
+    // newSubform.ParentFormId = 2;
+
+
+    /* 
+     "FormName":"Density Shot One",
+            "ParentFormId":null,
+            "FieldOrder":4,
+            "Title":"Baby T Button",
+            "DataType":"FORM SELECT",
+            "Chars":null,
+            "Required":1,
+            "JobId":null,
+            "FormId":null,
+            "GhostText":"",
+            "CustomerId":null,
+            "ParentFieldId":null,
+            "ParentGroupId":null,
+            "Units":"",
+            "TaskId":null,
+            "FieldValue":"",
+            "PickList":null,
+            "FieldId":4,
+            "ShowInApp":1,
+            "FormGroupId":null */
+
 }
+
+// const setParentForm = (currentSectionId) => {
+//     currentFormId = Number(currentSectionId.split('-')[1]);
+//     currentFormGroupId = Number(currentSectionId.split('-')[2]);
+//     currentParentGroupId = Number(currentSectionId.split('-')[3]);
+//     currentParentFieldId = Number(currentSectionId.split('-')[4]);
+//     let first_row = taskDataSet.filter(row => row.FormId === currentFormId && row.FormGroupId === currentFormGroupId && row.ParentGroupId === currentParentGroupId && row.ParentFieldId === currentParentFieldId )[0];
+//     FormId = first_row.ParentFormId;
+//     FormGroupId = currentParentGroupId;
+//     parentParentFieldId = first_row.ParentFieldId;
+//     parentForm.sectionId = 'form-' + parentFormId + '-' + parentFormGroupId;
+// }
 
 
 // global variables:
-const parentForm = {
-    FormId: '',
-    FormGroupId: '',
-    ParentFieldId: '',
-    ParentGroupId: '',
-    sectionId: '',
-    dataSet: getDataSet( this.FormId, this.FormGroupId, this.ParentGroupId, this.ParentFieldId),
-    };
+// const parentForm = {
+//     FormId: '',
+//     FormGroupId: '',
+//     ParentFieldId: '',
+//     ParentGroupId: '',
+//     sectionId: '',
+//     dataSet: getDataSet( this.FormId, this.FormGroupId, this.ParentGroupId, this.ParentFieldId),
+//     };
 
 const currentForm = {
     FormId: 2,
@@ -1689,9 +1846,6 @@ const visibleForm = {
     dataSet: function() {return getDataSet(this.FormId, this.FormGroupId, this.ParentGroupId, this.ParentFieldId)},
     title: function() {return getTitle(this.FormId, this.FormGroupId, this.ParentGroupId, this.ParentFieldId)},
 }
-
-
-
 
 
 
@@ -1792,14 +1946,10 @@ taskIdList.forEach(TaskId => {
                         // let's find all children of current form
                         // get children FormId. 
 
-                        /* alternativ way to find children FormId */
-                        /* let dataSetChildren = api_response.filter(row => row.ParentFormId === FormId && row.ParentFormGroupId === FormGroupId);
-                        let formIdListChildren = [];
-                        dataSetChildren.forEach(row => formIdListChildren.push(row.FormId))
-                        const formIdListChildrenUnique = [...new Set(formIdListChildren)]; */
                         let currentFieldId = row.FieldId;
                         let currentFormGroupId = row.FormGroupId;
-                        let childrenDataSetByFormId = taskDataSet.filter(row => row.ParentFormId === FormId && row.ParentFieldId === currentFieldId && row.ParentGroupId === currentFormGroupId);
+
+                        let childrenDataSetByFormId = taskDataSet.filter(row => row.FormId === FormId+1 && row.ParentFormId === FormId && row.ParentFieldId === currentFieldId && row.ParentGroupId === currentFormGroupId);
 
                         // if a form has children let's add a <div> for children preview with a lable
 
@@ -1815,34 +1965,25 @@ taskIdList.forEach(TaskId => {
                             const childrenFormGroupIdListUnique = [...new Set(childrenFormGroupIdList)];
 
                             childrenFormGroupIdListUnique.forEach(childFormGroupId => {
-                                let childParentGroupIdList = [];
-                                let dataSetA = taskDataSet.filter(row => row.FormId === FormId + 1 && row.FormGroupId === childFormGroupId);
-                                dataSetA.forEach(row => childParentGroupIdList.push(row.ParentGroupId));
-                                const childParentGroupIdListUnique = [...new Set(childParentGroupIdList)];
-                                childParentGroupIdListUnique.forEach(childParentGroupId => {
-                                    let childParentFieldIdList = [];
-                                    let dataSetB = taskDataSet.filter(row => row.FormId === FormId+1 && row.FormGroupId === childFormGroupId && row.ParentGroupId === childParentGroupId);
-                                    dataSetB.forEach(row => childParentFieldIdList.push(row.ParentFieldId));
-                                    const childParentFieldIdListUnique = [...new Set(childParentFieldIdList)];
-                                    // add preview for each child:
+                                let childFormId = FormId + 1;
+                                let childParentGroupId = row.FormGroupId;
+                                let childParentFieldId = row.FieldId;
 
-                                    childParentFieldIdListUnique.forEach(childParentFieldId =>{
-                                        let childFormId = FormId + 1;                            
-                                        setChildForm(childFormId, childFormGroupId, childParentGroupId, childParentFieldId);
-                                        childSectionId = "form-" + TaskId + '-' + childFormId + '-' + childFormGroupId + "-" + childParentGroupId + "-" + childParentFieldId;
-                                        $('#'+ sectionId).find('.form-preview-container').append(`
-                                            <div id="preview1/${childSectionId}" class="preview-container">
-                                                <p id="preview2/${childSectionId}">${childForm.title()} ${childFormGroupId}</p>
-                                            </div>
-                                        `)
+                                setChildForm(childFormId, childFormGroupId, childParentGroupId, childParentFieldId);
+                                childSectionId = "form-" + TaskId + '-' + childFormId + '-' + childFormGroupId + "-" + childParentGroupId + "-" + childParentFieldId;
+                                $('#'+ sectionId).find('.form-preview-container').append(`
+                                    <div id="preview1/${childSectionId}" class="preview-container">
+                                        <p id="preview2/${childSectionId}">${childForm.title()} ${childFormGroupId}</p>
+                                    </div>
+                                `)
 
-                                    });
-                                });
                             })
                             // add button at the end
+
                             $('#'+ sectionId).append(`
-                            <button type="button" id="addTo-${sectionId}">New ${row.Title}</button>
-                            `)                        
+                            <button type="button" id="addTo-${sectionId}" onclick="addNewSubform('${row.Title}', '${sectionId}', '${row.FieldId}')">New ${row.Title}</button>
+                            `)
+                            //    ${row.Title, sectionId, row.FieldId}                     
                         }
                         
                     // for every other row we add just input field
@@ -1955,7 +2096,6 @@ const saveForm = (formId) => {
 }
 
 
-
 console.log(sectionIdList);
 
 
@@ -2004,15 +2144,11 @@ const switchForm = (event) => {
     // if form id was selected (preview form ID always contain "/" so it always can be splitted)
     
     if (elementSelected.split('/')[1]) {
-        console.log("rrtrefvrgtrtegvf");
-        console.log(elementSelected.split('/')[1]);
         let formIdSelected = elementSelected.split('/')[1];
 
         // verify if form Id is in the list of all forms sectionIdList
-        console.log(sectionIdList[currentTaskId].includes(formIdSelected));
         if (sectionIdList[currentTaskId].includes(formIdSelected)) {
             
-            console.log(visibleForm.sectionId);
             // remove "hidden" class from selected form Id
             $('#' + formIdSelected).removeClass('hidden');
 

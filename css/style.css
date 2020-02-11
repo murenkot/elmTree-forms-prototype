@@ -12,7 +12,10 @@ header {
 body {
     margin: auto;
     background-color: rgb(218, 216, 216);
+    
 }
+
+
 
 #back {
     padding: 15px;
@@ -80,7 +83,7 @@ input {
     margin: 0;
 }
 
-#form-3-preview-container {
+.form-preview-container {
     margin: 0 10px;
 
 }
@@ -95,4 +98,18 @@ button {
 
 .hidden {
     display: none;
+}
+
+
+.tasks-preview-container {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-preview-container p {
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px 5px;
 }
