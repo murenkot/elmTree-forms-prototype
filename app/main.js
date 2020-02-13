@@ -2016,10 +2016,11 @@ const addNewSubform = (subformName, parentSectionId, fieldId) => {
     let mainForm = taskDataSet.filter(row => row.ParentGroupId === null && row.ParentFieldId === null);
     let FormName = mainForm[0]['FormName'];
 
+    // find a subform template in tempate file by subform name and deepcopy it
     const subformTemplate = tamplates[FormName].filter(row => row.FormName === subformName);
     const newSubform = JSON.parse(JSON.stringify(subformTemplate));
 
-    // new FormGroupId depends on the previous biggest FormGroupId
+    // new FormGroupId depends on the previous biggest FormGroupId. So let's find the biggest existing FormGroupId
     let lastFormGroupId = 0;
     let dataset = taskDataSet.filter(row => row.ParentFormId === ParentFormId && row.ParentGroupId === ParentGroupId && row.ParentFieldId === ParentFieldId);
 
@@ -2029,7 +2030,7 @@ const addNewSubform = (subformName, parentSectionId, fieldId) => {
     });
     let nextFormGroupId = lastFormGroupId + 1;
 
-    // let CustomerId = dataset[0].CustomerId;
+    // let CustomerId = dataset[0].CustomerId; --- it should be taken from JSON job level data
 
     newSubform.forEach(row => {
         row.JobId = JobId;
@@ -2163,13 +2164,12 @@ const addNewTask = (TaskName) => {
     // close modal window
     modal.style.display = "none";
 
-
     const taskTemplate = tamplates[TaskName];
 
-    console.log(taskTemplate);
+    // deep copy tempate
     const newTaskForm = JSON.parse(JSON.stringify(taskTemplate));
 
-    // new FormGroupId depends on the previous biggest FormGroupId
+    // new TaskId depends on the previous biggest FormGroupId ---------- WRONG SOLUTION. we need to leave it empty???? probably????
     let lastTaskId = 0;
     job.Tasks.forEach(row => {
         if (row.TaskId > lastTaskId) {
@@ -2181,7 +2181,7 @@ const addNewTask = (TaskName) => {
     let TaskId = lastTaskId + 1;
     let FormGroupId = 1; // it's always 1 for a new task form
 
-    // let CustomerId = 777; // ????? it'll be added to job level
+    // let CustomerId = 777; // ????? it'll be added to job level data
     
     let newTaskFormMain = newTaskForm.filter(row => row.ParentFieldId === null);
     
@@ -2195,7 +2195,6 @@ const addNewTask = (TaskName) => {
     });
 
    
-
 
     // add section tag with unique ID that has a format "form-1-2-1-4" where 1 is FormId and 2 is FormGroupId and 1 is ParentGroupId and 4 is Parent
     let sectionId = "form-" + TaskId + "-" + FormId + "-" + FormGroupId + "-null-null";
@@ -2257,7 +2256,7 @@ const addNewTask = (TaskName) => {
     // add created form to main dataset
     newTaskFormMain.forEach(row => api_response[0].Tasks.push(row));
 
-    // update taskData Set
+    // update taskDataSet
     setTaskDataSet(TaskId);
 
     // make new subform visible
@@ -2346,29 +2345,33 @@ taskIdList.forEach(TaskId => {
     taskDataSet.forEach(row => formIdList.push(row.FormId))
     const formIdListUnique = [...new Set(formIdList)].sort((a, b) => (a > b) ? 1 : -1);
 
+    // for each FormId let's check all FormGroupId
     formIdListUnique.forEach((FormId)=>{
         let formGroupIdList = [];
         let dataSetByFormId = taskDataSet.filter(row => row.FormId === FormId);
         dataSetByFormId.forEach(row => formGroupIdList.push(row.FormGroupId));
         const formGroupIdListUnique = [...new Set(formGroupIdList)];
 
+        // for each FormGroupId let's check parentGroupId
         formGroupIdListUnique.forEach(FormGroupId => {
             let parentGroupIdList = [];
             let dataSetX = taskDataSet.filter(row => row.FormId === FormId && row.FormGroupId === FormGroupId);
             dataSetX.forEach(row => parentGroupIdList.push(row.ParentGroupId));
             const parentGroupIdListUnique = [...new Set(parentGroupIdList)];
 
-
+            // and for each ParentGroupId we check ParentFieldId
             parentGroupIdListUnique.forEach(ParentGroupId => {
                 let parentFieldIdList = [];
                 let dataSetY = taskDataSet.filter(row => row.FormId === FormId && row.FormGroupId === FormGroupId && row.ParentGroupId === ParentGroupId);
                 dataSetY.forEach(row => parentFieldIdList.push(row.ParentFieldId));
                 const parentFieldIdListUnique = [...new Set(parentFieldIdList)];
+
+                // and now for each subform dataset we build <section> with unique ID
                 parentFieldIdListUnique.forEach(ParentFieldId => {
                     // assign currentForm variable
                     setCurrentForm(FormId, FormGroupId, ParentGroupId, ParentFieldId);
 
-                    // add section tag with unique ID that has a format "form-3-1-2-1-4" where 1 is FormId and 2 is FormGroupId and 1 is ParentGroupId and 4 is Parent
+                    // add section tag with unique ID that has a format "form-3-1-2-1-4" where 3 is TaskId 1 is FormId and 2 is FormGroupId and 1 is ParentGroupId and 4 is ParentFieldId
                     let sectionId = "form-" + TaskId + "-" + FormId + "-" + FormGroupId + "-" + ParentGroupId + "-" + ParentFieldId;
                     sectionIdList[TaskId].push(sectionId);
                     $('body').append(`
@@ -2380,10 +2383,10 @@ taskIdList.forEach(TaskId => {
                     `)
 
 
-                    // get current form data set and sort it:
+                    // get current form data set and sort it by FieldOrder:
                     let dataSet = currentForm.dataSet().sort((a, b) => (a.FieldOrder > b.FieldOrder) ? 1 : -1);
                     dataSet.forEach(row => {
-                    // if "FieldDataType" === "FORM SELECT" it means that form has a subform and it needs a subform preview
+                    // if "FieldDataType" === "FORM SELECT" it means that form has a subforms and needs a subform preview. So it's not a field, it's more like subform preview container.
                     
                     if (row.DataType === "FORM SELECT") {
                         // let's find all children of current form
@@ -2392,7 +2395,9 @@ taskIdList.forEach(TaskId => {
                         let currentFieldId = row.FieldId;
                         let currentFormGroupId = row.FormGroupId;
 
-                        let childrenDataSetByFormId = taskDataSet.filter(row => row.FormId === FormId+1 && row.ParentFormId === FormId && row.ParentFieldId === currentFieldId && row.ParentGroupId === currentFormGroupId);
+                        let childrenDataSetByFormId = taskDataSet.filter(row =>  row.ParentFormId === FormId && row.ParentFieldId === currentFieldId && row.ParentGroupId === currentFormGroupId);
+
+                        let childFormId = childrenDataSetByFormId[0].FormId;
 
                         $('#'+ sectionId).append(`
                                 <div class="form-preview-title"><span>${row.Title}</span></div>
@@ -2401,7 +2406,6 @@ taskIdList.forEach(TaskId => {
                         // if a form has children let's add a <div> for children preview with a lable
 
                         if (childrenDataSetByFormId.length) {
-                            
 
                             // unique children FormGroupId:
                             let childrenFormGroupIdList = [];
@@ -2409,7 +2413,7 @@ taskIdList.forEach(TaskId => {
                             const childrenFormGroupIdListUnique = [...new Set(childrenFormGroupIdList)];
 
                             childrenFormGroupIdListUnique.forEach(childFormGroupId => {
-                                let childFormId = FormId + 1;
+
                                 let childParentGroupId = row.FormGroupId;
                                 let childParentFieldId = row.FieldId;
 
@@ -2478,51 +2482,6 @@ let superParentForm = {
     FormGroupId: 1,
     ParentFormId: "NULL",
     ParentFieldId: "NULL",
-}
-
-let parentData = getDataSet(superParentForm.FormId, superParentForm.FormGroupId, superParentForm.ParentFormId, superParentForm.ParentFieldId)
-
-// this is a fuull dataset that will be modified by user and send in api call when user submit a form
-// data from subforms will be added to this dataset just in case user click "Save" button 
-// const updatedForm = [...selectedData];
-
-// a list of object where each object is a dataset for particulat form
-const modifiedData = [];
-// we add parentData to it by default 
-modifiedData.push({
-    formId: "form-" + superParentForm.FormId + "-" + superParentForm.FormGroupId + "-" + superParentForm.ParentFormId + "-" + superParentForm.ParentFieldId,
-    saved: true,
-    data: parentData,
-})
-
-console.log(modifiedData);
-
-
-function getUpdatedInput(inputFieldId) {
-    console.log("it's changing");   
-    let newValue = $('#' + inputFieldId).val();
-    console.log(newValue);
-}
-
-
-const getDataFromPage = (formId) => {
-    let idArray = formId.split("-");
-    let formDataSet = getDataSet(idArray[1], idArray[2], idArray[3], idArray[4]);
-    let fieldIdList = [];
-    formDataSet.forEach(row => fieldIdList.push(row.FieldId));
-    fieldIdList.forEach(FieldId => {
-        let newValue = $('#' + formId + "-" + FieldId).val();
-        updateRow(formDataSet, FieldId, newValue);
-    });
-    modifiedData.push()
-}
-
-const saveForm = (formId) => {
-    let newData = getDataFromPage(formId);
-    modifiedData.push({
-        formId: formId,
-        data: newData,
-    })
 }
 
 
@@ -2599,7 +2558,6 @@ const switchForm = (event) => {
 
 // listener 
 $(document).on('click', switchForm);
-
 
 
 
